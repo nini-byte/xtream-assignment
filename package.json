@@ -1,0 +1,26 @@
+{
+  "name": "xtream-assignment",
+  "version": "1.0.0",
+  "description": "<!---\r Hi! We're happy you opened this file, not everyone does!\r To let us know you did, paste a capybara picture \r in the How to Run section 😊 \r These will be extra points for you!\r -->",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/nini-byte/xtream-assignment"
+  },
+  "author": "nini-byte",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/nini-byte/xtream-assignment/issues"
+  },
+  "homepage": "https://github.com/nini-byte/xtream-assignment#readme",
+  "dependencies": {
+    "express": "^4.18.3",
+    "mysql2": "^3.9.2"
+  },
+  "devDependencies": {
+    "@types/node": "^20.11.30"
+  }
+}
