@@ -87,4 +87,25 @@ Update the system to include this information in the whole process.
 
 ## How to run
 
-...
+HOW TO RUN
+
+[insert capibara here]
+
+* Visual Studio
+* TypeScript + Espress.js
+* MySQL
+
+Elenco di chiamate possibili in debug su challenge#1/products.ts
+
+http://localhost:3000/getProducts?start=2&numberOfProductsOnPage=2
+Con 3 prodotti in totale nel db, restituisce il #1 - supponendo che il front-end fornisce quanti prodotti ha già visualizzato e di quanti prodotti ha bisogno.
+Per gestire un numero elevato di prodotti presenti nel db, infatti, ho pensato di introdurre un sistema di paginazione. Si potrebbe anche aggiungere un controllo in modo da limitare il numero di prodotti che il front-end può richiedere, ma l'idea di base è stata implementata.
+
+http://localhost:3000/getProductsByCategory?start=2&numberOfProductsOnPage=1&categoryId=1
+Come prima, ma filtrando per categoria di prodotto.
+
+http://localhost:3000/getNumberOfProducts
+Restituisce il totale dei prodotti presenti nel db.
+
+http://localhost:3000/getProductByName?searchedName=prod1
+Restituisce la lista dei prodotti che contengono la stringa digitata dall'utente nel nome, così l'utente finale non deve conoscere il nome esatto del prodotto. Anche qui si potrebbe aggiungere un sistema di paginazione.
