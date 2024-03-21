@@ -6,8 +6,8 @@ USE `fresh_cart_db`;
 -- * in ORDER_PRODUCTS we store the price and extra_points_earned for every product ordered, so we can look at a user's purchase history even if a product gets changed over time
 -- * a USER starts with 0 available_points
 
-CREATE TABLE categories (
-	category_id INT NOT NULL,
+CREATE TABLE categories2 (
+	category_id INT NOT NULL AUTO INCREMENT,
     name VARCHAR(256) NOT NULL,
 	PRIMARY KEY (category_id)
 );

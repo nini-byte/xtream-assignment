@@ -36,6 +36,7 @@ var __generator = (this && this.__generator) || function (thisArg, body) {
     }
 };
 Object.defineProperty(exports, "__esModule", { value: true });
+exports.getNumberOfProducts = void 0;
 //import mysql from 'mysql2';
 var mysql = require('mysql2');
 var express = require('express');
@@ -158,6 +159,7 @@ function getNumberOfProducts(connection) {
         });
     });
 }
+exports.getNumberOfProducts = getNumberOfProducts;
 function getNumberOfProductsForEachCategory(connection) {
     return new Promise(function (resolve, reject) {
         var queryContent = "SELECT category_id, COUNT(*) AS number_of_products FROM products GROUP BY category_id";

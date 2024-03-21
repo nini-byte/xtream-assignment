@@ -102,7 +102,7 @@ app.get('/getProductByName', async (req: Request, res: Response) => {
 	
 })
 
-function getNumberOfProducts(connection: Connection): Promise<number> {
+export function getNumberOfProducts(connection: Connection): Promise<number> {
       
     return new Promise<number>((resolve, reject) => {
         
